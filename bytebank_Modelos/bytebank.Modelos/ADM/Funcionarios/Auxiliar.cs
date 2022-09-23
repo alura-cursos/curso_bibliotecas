@@ -11,7 +11,7 @@
             Salario *= 1.1;
         }
 
-        public override double getBonificacao()
+        protected internal override double getBonificacao()
         {
             return Salario * 0.2;
         }
