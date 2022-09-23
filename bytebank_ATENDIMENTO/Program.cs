@@ -1,14 +1,24 @@
-﻿using bytebank_ATENDIMENTO.bytebank.Atendimento;
-using bytebank_GeradorChavePix;
+﻿using bytebank.Modelos.ADM.Funcionarios;
+using bytebank_ATENDIMENTO.bytebank.Atendimento;
+
 
 Console.WriteLine("Boas Vindas ao ByteBank, Atendimento.");
-//new ByteBankAtendimento().AtendimentoCliente();
+new ByteBankAtendimento().AtendimentoCliente();
 
-Console.WriteLine(GeradorPix.GetChavePix());
+//public class Estagiario : Funcionario
+//{
+//    public Estagiario(double salario, string cpf) : base(salario, cpf)
+//    {
+//    }
 
-var listaDeChaves = GeradorPix.GetChavesPix(10);
+//    public override void AumentarSalario()
+//    {
+//        // implementação;
+//    }
 
-foreach (var chave in listaDeChaves)
-{
-    Console.WriteLine(chave);
-}
+//    protected override double getBonificacao()
+//    {
+//        // implementação;
+//        return 0;
+//    }
+//}
