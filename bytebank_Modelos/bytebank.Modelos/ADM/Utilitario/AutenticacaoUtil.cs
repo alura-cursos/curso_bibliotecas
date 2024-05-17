@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace bytebank_Modelos.bytebank.Modelos.ADM.Utilitario
 {
-    public class AutenticacaoUtil
+    internal class AutenticacaoUtil
     {
         public bool ValidarSenha(string senhaverdadeira, string senhatentativa)
         {
