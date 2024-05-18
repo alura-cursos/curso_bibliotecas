@@ -7,7 +7,7 @@ namespace bytebank.Modelos.ADM.Funcionarios
     public abstract class FuncionarioAutenticavel : Funcionario, IAutenticavel
     {
         public string Senha { get; set; }
-        internal AutenticacaoUtil Autenticador { get; set; }
+        AutenticacaoUtil Autenticador { get; set; }
 
 
         public FuncionarioAutenticavel(double salario, string cpf)
